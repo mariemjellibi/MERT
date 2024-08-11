@@ -1,0 +1,163 @@
+/* App.module.css */
+
+.App {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #0d0a2cbf 0%, #31136cff 50%, #481c9eff 100%);
+    overflow: hidden;
+    position: relative;
+    color: #ffffff; /* Ensures text is readable against the dark background */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+/* Moving Shape */
+.movingShape {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px; /* Adjust size as needed */
+    height: 600px; /* Adjust size as needed */
+    background: radial-gradient(circle, rgba(255, 100, 100, 0.6), rgba(229, 62, 62, 0.6));
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+    transform: translate(-50%, -50%) translateY(0); /* Start position */
+    transition: transform 0.3s ease-out; /* Smooth movement */
+    animation: float 6s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+/* Sections */
+.App > * {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed for your layout */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* Make sure sections appear above the background shape */
+    z-index: 1; /* Ensure sections are above the background shape */
+    animation: fadeIn 1s ease-out; /* Fade-in effect for content */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Header,
+.Hero,
+.Intro,
+.Services,
+.Createwebsites,
+.Montage,
+.Photoshop,
+.Marketing,
+.Contact {
+    margin-bottom: 40px; /* Adjust spacing between sections as needed */
+}
+
+/* Section Headings */
+.Header h1,
+.Hero h1,
+.Intro h1,
+.Services h1,
+.Createwebsites h1,
+.Montage h1,
+.Photoshop h1,
+.Marketing h1,
+.Contact h1 {
+    font-size: 2.5rem;
+    color: #ff4081; /* Vibrant accent color for headings */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to text */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+   
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(169, 64, 255, 0.5);
+}
+
+
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #ff80e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff79b0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .App {
+        padding: 0 10px;
+    }
+
+    .movingShape {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Header h1,
+    .Hero h1,
+    .Intro h1,
+    .Services h1,
+    .Createwebsites h1,
+    .Montage h1,
+    .Photoshop h1,
+    .Marketing h1,
+    .Contact h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.875rem;
+    }
+}

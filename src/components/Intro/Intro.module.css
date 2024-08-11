@@ -1,0 +1,131 @@
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 40px;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .informations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .q1 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .q1:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .q1 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .q1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .q1 p:hover {
+    transform: translateX(10px);
+    color: #000000;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   */
+   .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.informations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.q1 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.q1:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.q1 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.q1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.q1 p:hover {
+    transform: translateX(10px);
+    color: #000000;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

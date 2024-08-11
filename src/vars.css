@@ -1,0 +1,14 @@
+:root{
+
+    /* colors */
+    --color-text:#fff;
+  
+    --color-bg:hsla(245, 63%, 11%, 0.749);
+    --gradient-mauve1:#8152e1ff;
+    --gradient-mauve2:#9251e1ff;
+    --color-darkmv:#581CA0;
+    --color-orange:rgba(255, 100, 100, 1);
+    --color-blue:rgba(66, 133, 244, 1.000);
+    /* fonts */
+    --font-robot:"roboto";
+}
